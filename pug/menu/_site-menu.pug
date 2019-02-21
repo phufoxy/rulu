@@ -1,0 +1,59 @@
+section.b-page-menu#b-scroll
+    .container
+        .row
+            .col-lg-3
+                .b-logo
+                    a(href="#").b-link
+                        .b-text-logo
+                            h1.b-title Wine hourse
+            .col-lg-9
+                nav.b-page-nav
+                    ul.b-list-item
+                        -var listItem = [{title:'TRANG CHỦ',active:true},{title:'RƯỢU VÀNG ĐỎ',active:false,dropdown:true},{title:'RƯỢU TRẮNG',active:false},{title:'CHAMPAGNE',active:false},{title:'THÔNG TIN',active:false},{title:'BLOG',active:false},{title:'LIÊN HỆ',active:false}]
+                        each item in listItem
+                            if item.dropdown
+                                li.b-item.b-dropdown
+                                    if item.active
+                                        a(href="#").b-link.active #{item.title}
+                                        ul.b-list-item.b-hash-menu
+                                                -var listDrop = [{title:'RƯỢU NGOẠI',item:'Rượu Chivas'},{title:'RƯỢU NGOẠI',item:'Rượu Chivas'},{title:'RƯỢU NGOẠI',item:'Rượu Chivas'},{title:'RƯỢU NGOẠI',item:'Rượu Chivas'},{title:'RƯỢU NGOẠI',item:'Rượu Chivas'},{title:'RƯỢU NGOẠI',item:'Rượu Chivas'},{title:'RƯỢU NGOẠI',item:'Rượu Chivas'}]
+                                                each item1 in listDrop
+                                                    li.b-item
+                                                        a(href="#").b-link #{item1.item}
+                                    else
+                                        a(href="#").b-link #{item.title}
+                                        .b-list-item.b-hash-menu
+                                            ul.b-list-item
+                                                li.b-item
+                                                    a(href="#").b-link RƯỢU NGOẠI
+                                                li.b-item
+                                                    a(href="#").b-link RƯỢU NGOẠI
+                                                li.b-item
+                                                    a(href="#").b-link RƯỢU NGOẠI
+                                                li.b-item
+                                                    a(href="#").b-link RƯỢU NGOẠI
+                                            ul.b-list-item
+                                                li.b-item
+                                                    a(href="#").b-link RƯỢU NGOẠI
+                                                li.b-item
+                                                    a(href="#").b-link RƯỢU NGOẠI
+                                                li.b-item
+                                                    a(href="#").b-link RƯỢU NGOẠI
+                                                li.b-item
+                                                    a(href="#").b-link RƯỢU NGOẠI
+                                            ul.b-list-item
+                                                li.b-item
+                                                    a(href="#").b-link RƯỢU NGOẠI
+                                                li.b-item
+                                                    a(href="#").b-link RƯỢU NGOẠI
+                                                li.b-item
+                                                    a(href="#").b-link RƯỢU NGOẠI
+                                                li.b-item
+                                                    a(href="#").b-link RƯỢU NGOẠI
+
+                            else
+                                li.b-item
+                                    if item.active
+                                        a(href="#").b-link.active #{item.title}
+                                    else
+                                        a(href="#").b-link #{item.title}

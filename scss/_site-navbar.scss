@@ -1,0 +1,66 @@
+$color-white: rgba(255, 255, 255, 0.502);
+$color-yellow: rgba(230, 174, 72, 1);
+.b-page-header {
+  position: absolute;
+  height: 40px;
+  background-image: url("./../images/bg-header.png");
+  background-size: cover;
+  width: 100%;
+  padding: 5px 0px;
+  z-index: 99;
+  .b-page-nav {
+    position: relative;
+    text-align: left;
+    .b-item {
+      display: inline;
+      padding-right: 2px;
+      padding-left: 2px;
+      .b-link {
+        font-size: 12px;
+        font-family: "Times New Roman", Times, "serif";
+        color: $color-white;
+        &::after {
+          content: "-";
+          font-weight: 900;
+          font-size: 10px;
+          color: $color-white;
+          margin-left: 5px;
+        }
+        &:hover {
+          color: $color-yellow;
+        }
+      }
+      &:last-child {
+        .b-link {
+          &::after {
+            visibility: none;
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+  .b-search {
+    position: relative;
+    text-align: right;
+    input {
+      position: relative;
+      background-color: transparent;
+      border-left: 2px solid $white;
+      border-right: 0;
+      border-top: 0;
+      border-bottom: 0;
+      width: 200px;
+      height: 100%;
+      padding: 0 5px;
+      color: $white;
+      font-family: "Times New Roman", Times, "serif";
+    }
+    i {
+      color: $white;
+      position: absolute;
+      right: 10px;
+      top: 5px;
+    }
+  }
+}

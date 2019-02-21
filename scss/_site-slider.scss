@@ -1,0 +1,61 @@
+@mixin tranform($param) {
+  transform: $param;
+  -webkit-transform: $param;
+  -ms-transform: $param;
+  -moz-transform: $param;
+}
+@font-face {
+  font-family: "UTM";
+  src: url("../fonts/utm/UTM\ Aquarelle.ttf");
+}
+@font-face {
+  font-family: "lobster";
+  src: url("../fonts/lobster/Lobster-Regular.ttf");
+}
+@font-face {
+  font-family: "UVF";
+  src: url("../fonts/UVF/UVF\ Didot.ttf");
+}
+$color-title: rgba(255, 255, 255, 0.702);
+.b-page-slider {
+  position: relative;
+  height: 600px;
+  .b-image {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .b-content {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    @include tranform(translate(-50%, -50%));
+    .b-text-title {
+      font-family: "UTM";
+      color: $color-title;
+      font-size: 16px;
+      line-height: 1.2;
+      @include tranform(matrix(18, 0, 0, 18, 0, 0));
+      text-align: center;
+      span {
+        font-family: "lobster";
+        font-size: 2px;
+        color: $color-title;
+      }
+    }
+    .b-text-name {
+      position: absolute;
+      font-family: "UVF";
+      font-size: 10px;
+      color: $color-title;
+      @include tranform(matrix(7, 0, 0, 7, 0, 0));
+      top: -40px;
+      left: 60px;
+      width: 100%;
+      font-weight: 100;
+    }
+  }
+}
