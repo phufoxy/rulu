@@ -1,14 +1,14 @@
 header.b-page-header
     .container
         .row
-            .col-lg-8.col-md-12
+            .col-lg-8.col-md-12.col-sm-12
                 nav.b-page-nav
                     ul.b-list-item
                         -var listItem = ['Tài khoản của tôi','Trạng thái đơn hàng','Danh sách ưa thích','Giỏ hàng','Đăng nhập','Đăng ký']
                         each item in listItem
                             li.b-item
                                 a(href="#").b-link #{item}
-            .col-lg-4.col-md-12
+            .col-lg-4.col-md-12.col-sm-12
                 form.b-search(action="#")
                     input(type="text" placeholder="Tìm kiếm ở đây").b-form
                     i.fas.fa-search

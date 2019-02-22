@@ -58,4 +58,9 @@ $color-title: rgba(255, 255, 255, 0.702);
       font-weight: 100;
     }
   }
+  @media screen and (max-width:992px) {
+    .b-content{
+      display: none;
+    }
+  }
 }

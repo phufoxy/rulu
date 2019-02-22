@@ -10,11 +10,18 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
+    <div class="loadingScreen">
+      <div class="loadingScreen__wrapper">
+        <div class="loadingScreen__wrapper__text">
+          <p>  Loading <span>. </span><span>. </span><span>. </span><span>. </span><span>. </span></p>
+        </div>
+      </div>
+    </div>
     <div class="b-page">
       <header class="b-page-header">
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 col-md-12">
+            <div class="col-lg-8 col-md-12 col-sm-12">
               <nav class="b-page-nav">
                 <ul class="b-list-item">
                   <li class="b-item"><a class="b-link" href="#">Tài khoản của tôi</a></li>
@@ -26,7 +33,7 @@
                 </ul>
               </nav>
             </div>
-            <div class="col-lg-4 col-md-12">
+            <div class="col-lg-4 col-md-12 col-sm-12">
               <form class="b-search" action="#">
                 <input class="b-form" type="text" placeholder="Tìm kiếm ở đây"><i class="fas fa-search"></i>
               </form>
@@ -41,6 +48,12 @@
           <h4 class="b-text-name">Vang Đỏ</h4>
         </div>
       </section>
+      <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3"><span class="icon-close2 js-menu-toggle"><i class="fas fa-window-close"></i></span></div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
       <section class="b-page-menu" id="b-scroll">
         <div class="container">
           <div class="row">
@@ -52,7 +65,8 @@
             </div>
             <div class="col-lg-9">
               <nav class="b-page-nav">
-                <ul class="b-list-item">
+                <div class="b-open-menu d-lg-none"><a class="site-menu-toggle js-menu-toggle" href="#"><i class="fas fa-bars"></i></a></div>
+                <ul class="b-list-item js-clone-nav d-none d-lg-block">
                   <li class="b-item"><a class="b-link active" href="#">TRANG CHỦ</a>
                   </li>
                   <li class="b-item b-dropdown"><a class="b-link" href="#">RƯỢU VÀNG ĐỎ</a>
@@ -179,12 +193,12 @@ Một hợp chất có trong rượu vang được gọi là resveratro có kh�
                 </div>
                 <div class="b-favorite">
                   <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
                       <div class="item">
                         <p class="b-text-norm"><i class="fas fa-heart"></i> Yêu Thích</p>
                       </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6">
                       <div class="item">
                         <p class="b-text-norm"><i class="fas fa-heart"></i> So Sánh</p>
                       </div>
@@ -208,12 +222,12 @@ Một hợp chất có trong rượu vang được gọi là resveratro có kh�
                 </div>
                 <div class="b-favorite">
                   <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
                       <div class="item">
                         <p class="b-text-norm"><i class="fas fa-heart"></i> Yêu Thích</p>
                       </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6">
                       <div class="item">
                         <p class="b-text-norm"><i class="fas fa-heart"></i> So Sánh</p>
                       </div>
@@ -237,12 +251,12 @@ Một hợp chất có trong rượu vang được gọi là resveratro có kh�
                 </div>
                 <div class="b-favorite">
                   <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
                       <div class="item">
                         <p class="b-text-norm"><i class="fas fa-heart"></i> Yêu Thích</p>
                       </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6">
                       <div class="item">
                         <p class="b-text-norm"><i class="fas fa-heart"></i> So Sánh</p>
                       </div>
@@ -263,12 +277,12 @@ Một hợp chất có trong rượu vang được gọi là resveratro có kh�
                 </div>
                 <div class="b-favorite">
                   <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
                       <div class="item">
                         <p class="b-text-norm"><i class="fas fa-heart"></i> Yêu Thích</p>
                       </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6">
                       <div class="item">
                         <p class="b-text-norm"><i class="fas fa-heart"></i> So Sánh</p>
                       </div>
@@ -392,12 +406,12 @@ Một hợp chất có trong rượu vang được gọi là resveratro có kh�
                 </div>
                 <div class="b-favorite">
                   <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
                       <div class="item">
                         <p class="b-text-norm"><i class="fas fa-heart"></i> Yêu Thích</p>
                       </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
                       <div class="item">
                         <p class="b-text-norm"><i class="fas fa-heart"></i> So Sánh</p>
                       </div>
@@ -418,12 +432,12 @@ Một hợp chất có trong rượu vang được gọi là resveratro có kh�
                 </div>
                 <div class="b-favorite">
                   <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
                       <div class="item">
                         <p class="b-text-norm"><i class="fas fa-heart"></i> Yêu Thích</p>
                       </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
                       <div class="item">
                         <p class="b-text-norm"><i class="fas fa-heart"></i> So Sánh</p>
                       </div>
@@ -444,12 +458,12 @@ Một hợp chất có trong rượu vang được gọi là resveratro có kh�
                 </div>
                 <div class="b-favorite">
                   <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
                       <div class="item">
                         <p class="b-text-norm"><i class="fas fa-heart"></i> Yêu Thích</p>
                       </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
                       <div class="item">
                         <p class="b-text-norm"><i class="fas fa-heart"></i> So Sánh</p>
                       </div>
@@ -470,12 +484,12 @@ Một hợp chất có trong rượu vang được gọi là resveratro có kh�
                 </div>
                 <div class="b-favorite">
                   <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
                       <div class="item">
                         <p class="b-text-norm"><i class="fas fa-heart"></i> Yêu Thích</p>
                       </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
                       <div class="item">
                         <p class="b-text-norm"><i class="fas fa-heart"></i> So Sánh</p>
                       </div>

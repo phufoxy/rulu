@@ -4,7 +4,18 @@
 }
 $color_black: rgba(5, 5, 5, 1);
 $color-yellow: rgba(230, 174, 72, 1);
-
+::-webkit-scrollbar {
+  background-color: $color-white;
+  width: 5px;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $color-yellow;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 100px;
+}
 body {
   line-height: 1.4em;
   font-family: "Times";
@@ -57,6 +68,7 @@ body {
       box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.6);
       @include tranform(translate(-50%, 0%));
       padding: 20px;
+
       .b-sale {
         position: relative;
         width: 100%;
@@ -130,7 +142,31 @@ body {
           }
         }
       }
+      @media screen and(max-width:$break-large) {
+        position: relative;
+        width: 100%;
+        .b-sale {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          .b-image {
+            visibility: visible;
+            img {
+              width: 100px;
+              position: relative;
+              top: 0;
+              @include tranform(translate(-50%, 0%));
+            }
+          }
+          .b-info {
+            visibility: hidden;
+          }
+        }
+      }
     }
+  }
+  @media screen and(max-width:$break-large) {
+    height: 1600px;
   }
 }
 .b-page-new {
